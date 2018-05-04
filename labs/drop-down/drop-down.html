@@ -1,0 +1,58 @@
+<!doctype html>
+<html dir="ltr" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drop-Down</title>
+    <link rel="stylesheet" href="whitespace-reset.css">
+    <link rel="stylesheet" href="drop-down.css">
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Clickable Drop-Down</h1>
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="click">
+              <label>
+                Projects (click me)
+                <input type="checkbox">
+                <nav>
+                  <ul>
+                    <li><a href="#">- Project 1</a></li>
+                    <li><a href="#">- Project 2</a></li>
+                    <li><a href="#">- Project 3</a></li>
+                  </ul>
+                </nav>
+              </label>
+            </li>
+            <li><a href="#">Team</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section>
+        <h1>Drop-Down on hover</h1>
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="hover">
+              <button>Projects (hover over me)</button>
+              <nav>
+                <ul>
+                  <li><a href="#">Project 1</a></li>
+                  <li><a href="#">Project 2</a></li>
+                  <li><a href="#">Project 3</a></li>
+                </ul>
+              </nav>
+            </li>
+            <li><a href="#">Team</a></li>
+          </ul>
+        </nav>
+      </section>
+   </main>
+  </body>
+</html>

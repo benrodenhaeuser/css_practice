@@ -1,0 +1,59 @@
+/* Debugging outlines */
+
+* {
+  outline: 1px solid red;
+}
+
+/* Grid set-up */
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "header header" "aside article" "footer footer";
+  grid-gap: 20px;
+}
+
+header {
+  grid-area: header;
+}
+
+article {
+  grid-area: article;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* Non-essential styling */
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 2;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+@media (max-width: 700px) {
+  body {
+    grid-template-areas:
+      "header header"
+      "article article"
+      "aside aside"
+      "footer footer";
+    min-width: auto;
+  }
+}

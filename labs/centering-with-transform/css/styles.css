@@ -1,0 +1,52 @@
+section {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 30px auto 0;
+  outline: 1px solid red;
+}
+
+section {
+  margin: 30px;
+}
+
+.center-both {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  outline: 1px solid blue;
+}
+
+.center-horiz {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  width: 40%;
+  outline: 1px solid blue;
+}
+
+.center-vert {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 40%;
+  outline: 1px solid blue;
+}
+
+p.inner-comment {
+  font-family: monospace;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+p.outer-comment {
+  font-family: monospace;
+  position: absolute;
+  top: -30px;
+  left: 5px;
+}

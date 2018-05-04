@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%; }
+
+main {
+  font-family: monospace; }
+
+@media (min-width: 360px) {
+  main {
+    margin: 10px 20px 10px 20px; } }
+
+@media (min-width: 642px) {
+  main {
+    margin: 10px 100px 30px 50px; } }
+
+@media (min-width: 898px) {
+  main {
+    margin: 10px 200px 100px 100px; } }
+
+@media (min-width: 1280px) {
+  main {
+    margin: 10px 300px 100px 150px; } }
+
+ul {
+  /* autoprefixer: off */
+  list-style: none;
+  display: grid;
+  margin: 100px 0;
+  padding: 1rem; }
+
+img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+}
+
+ul {
+  /* autoprefixer: off */
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-gap: 4px;
+  margin-top: 134px; }
+  ul li {
+    grid-column: span 2;
+    grid-row: span 2; }
+
+input[type=checkbox]:checked ~ ul {
+  /* autoprefixer: off */
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-gap: 4px;
+  margin-top: 152px; }
+  input[type=checkbox]:checked ~ ul li {
+    grid-column: span 2;
+    grid-row: span 2; }
+  input[type=checkbox]:checked ~ ul img {
+    border-radius: 50%; }
+  @media (min-width: 392px) {
+    input[type=checkbox]:checked ~ ul li {
+      margin-top: -18px; } }
+  @media (min-width: 392px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(3),
+    input[type=checkbox]:checked ~ ul li:nth-child(6),
+    input[type=checkbox]:checked ~ ul li:nth-child(9),
+    input[type=checkbox]:checked ~ ul li:nth-child(12),
+    input[type=checkbox]:checked ~ ul li:nth-child(15),
+    input[type=checkbox]:checked ~ ul li:nth-child(18) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 404px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(3),
+    input[type=checkbox]:checked ~ ul li:nth-child(6),
+    input[type=checkbox]:checked ~ ul li:nth-child(9),
+    input[type=checkbox]:checked ~ ul li:nth-child(12),
+    input[type=checkbox]:checked ~ ul li:nth-child(15),
+    input[type=checkbox]:checked ~ ul li:nth-child(18) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(3),
+    input[type=checkbox]:checked ~ ul li:nth-child(7),
+    input[type=checkbox]:checked ~ ul li:nth-child(11),
+    input[type=checkbox]:checked ~ ul li:nth-child(15),
+    input[type=checkbox]:checked ~ ul li:nth-child(19) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 468px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(3),
+    input[type=checkbox]:checked ~ ul li:nth-child(7),
+    input[type=checkbox]:checked ~ ul li:nth-child(11),
+    input[type=checkbox]:checked ~ ul li:nth-child(15),
+    input[type=checkbox]:checked ~ ul li:nth-child(19) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(4),
+    input[type=checkbox]:checked ~ ul li:nth-child(9),
+    input[type=checkbox]:checked ~ ul li:nth-child(14),
+    input[type=checkbox]:checked ~ ul li:nth-child(19) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 532px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(4),
+    input[type=checkbox]:checked ~ ul li:nth-child(9),
+    input[type=checkbox]:checked ~ ul li:nth-child(14),
+    input[type=checkbox]:checked ~ ul li:nth-child(19) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(4),
+    input[type=checkbox]:checked ~ ul li:nth-child(10),
+    input[type=checkbox]:checked ~ ul li:nth-child(16) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 770px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(4),
+    input[type=checkbox]:checked ~ ul li:nth-child(10),
+    input[type=checkbox]:checked ~ ul li:nth-child(16) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(5),
+    input[type=checkbox]:checked ~ ul li:nth-child(13) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 898px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(5),
+    input[type=checkbox]:checked ~ ul li:nth-child(13) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(4),
+    input[type=checkbox]:checked ~ ul li:nth-child(10),
+    input[type=checkbox]:checked ~ ul li:nth-child(16) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 920px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(4),
+    input[type=checkbox]:checked ~ ul li:nth-child(10),
+    input[type=checkbox]:checked ~ ul li:nth-child(16) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(5),
+    input[type=checkbox]:checked ~ ul li:nth-child(13) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 1048px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(5),
+    input[type=checkbox]:checked ~ ul li:nth-child(13) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(6),
+    input[type=checkbox]:checked ~ ul li:nth-child(16) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 1176px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(6),
+    input[type=checkbox]:checked ~ ul li:nth-child(16) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(7),
+    input[type=checkbox]:checked ~ ul li:nth-child(19) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 1280px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(7),
+    input[type=checkbox]:checked ~ ul li:nth-child(19) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(7),
+    input[type=checkbox]:checked ~ ul li:nth-child(18) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 1326px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(7),
+    input[type=checkbox]:checked ~ ul li:nth-child(18) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(7),
+    input[type=checkbox]:checked ~ ul li:nth-child(19) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 1400px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(7),
+    input[type=checkbox]:checked ~ ul li:nth-child(19) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(8),
+    input[type=checkbox]:checked ~ ul li:nth-child(21) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 1518px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(8),
+    input[type=checkbox]:checked ~ ul li:nth-child(21) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(9) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 1646px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(9) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(10) {
+      grid-column: 2 / span 2; } }
+  @media (min-width: 1838px) {
+    input[type=checkbox]:checked ~ ul li:nth-child(10) {
+      grid-column: auto / span 2; }
+    input[type=checkbox]:checked ~ ul li:nth-child(11) {
+      grid-column: 2 / span 2; } }
+
+label {
+  cursor: pointer; }
+/*# sourceMappingURL=01-001.css.map */
+
+
+/* make the image expand a bit on hover */
+
+img {
+  transition: 200ms;
+  transform: scale(1);
+}
+
+img:hover {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+  transition: 200ms;
+  transform: scale(1.5);
+}
+
+li input[type="checkbox"], section {
+  display: none;
+}
+
+input:checked ~ img {
+  position: relative;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+  transition: 1000ms;
+  transform: scale(20);
+}
+
+input:checked ~ section {
+  font-family: Helvetica;
+  position: absolute;
+  left: 30px;
+  top: 0;
+  font-size: 50px;
+  font-weight: bold;
+  display: block;
+  z-index: 2;
+  color: white;
+}

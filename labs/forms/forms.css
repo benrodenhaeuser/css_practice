@@ -1,0 +1,16 @@
+dd {
+  margin: 0;
+}
+
+input:focus {
+  border: 2px solid red;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden:checked ~ label {
+  color: red;
+}

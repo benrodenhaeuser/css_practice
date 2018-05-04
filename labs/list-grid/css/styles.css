@@ -1,0 +1,36 @@
+* {
+  outline: 1px solid red;
+}
+
+body {
+  font: normal 18px/1.2 Helvetica, Arial, sans-serif;
+  background-color: #ffd505;
+}
+
+main {
+  width: 900px;
+  margin: 50px auto 0; /* center main within body */
+  background-color: #ececec;
+}
+
+ul {
+  padding: 20px;
+  width: 850px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  margin: 0 auto; /* center ul within main */
+}
+
+li {
+  /* we avoid setting a width on the grid items! */
+  /* the grid items should but up with the grid lines! */
+  background-color: white;
+}
+
+img {
+  display: block;
+  height: 140px;
+  margin: 0 auto; /* center img within its li */
+}

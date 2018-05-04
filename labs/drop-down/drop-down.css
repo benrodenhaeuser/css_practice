@@ -1,0 +1,105 @@
+/* clickable drop-down */
+
+.click input {
+  display: none;
+}
+
+.click nav {
+  display: none;
+}
+
+.click input:checked ~ nav {
+  display: block;
+}
+
+/* drop-down on hover */
+
+.hover {
+  position: relative;
+  display: inline-block;
+}
+
+.hover nav {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+.hover:hover nav {
+  display: block;
+}
+
+/* non-essential styling */
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  margin: 50px;
+}
+
+nav {
+  display: inline-block;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: black;
+}
+
+section + section {
+  margin-top: 50px;
+}
+
+button, li {
+  background-color: red;
+  border: 1px solid white;
+}
+
+label li {
+  margin-left: -1px;
+}
+
+label ul {
+  margin-top: 2px;
+}
+
+
+.hover button, .hover li {
+  text-align: left;
+  border: 0;
+  width: 200px;
+  padding: 0;
+}
+
+.hover li {
+  background-color: gray;
+}
+
+.hover a {
+  color: white;
+}
+
+.click li {
+  width: 200px;
+  background-color: red;
+}
+
+.click label li {
+  background-color: gray;
+}
+
+.click label li {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.click a {
+  color: white;
+}

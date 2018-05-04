@@ -1,0 +1,17 @@
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+li {
+  position: relative;
+  outline: 1px solid red;
+  height: 33.333vw;
+}
+
+li p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
